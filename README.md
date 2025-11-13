@@ -5,7 +5,7 @@
 </h2>
 
 <h2 align="center">
-    ỨNG DỤNG CHUYỂN ĐỔI SỐ TRONG HỖ TRỢ CHẨN ĐOÁN SỨC KHỎE TÂM LÍ
+    HỆ THỐNG QUẢN LÝ CỬA HÀNG THỜI TRANG THÔNG MINH TRONG THỜI KỲ CHUYỂN ĐỔI SỐ
 </h2>
 
 <div align="center">
@@ -20,7 +20,7 @@
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 </div>
 
-# Hệ thống quản lý cửa hàng thời trang thông minh trong thời kỳ chuyển đổi số
+# HỆ THỐNG QUẢN LÝ CỬA HÀNG THỜI TRANG THÔNG MINH TRONG THỜI KỲ CHUYỂN ĐỔI SỐ
 
 > Dự án chuyển đổi số cho cửa hàng thời trang, kết hợp website bán hàng (E-commerce) và hệ thống quản lý nội bộ (IMS – Inventory Management System) trên nền tảng .NET và SQL Server.
 
