@@ -1,262 +1,214 @@
-Hệ thống quản lý cửa hàng thời trang thông minh trong thời kỳ chuyển đổi số
-1. Giới thiệu
+<h2 align="center">
+    <a href="https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin">
+    🎓 Faculty of Information Technology (DaiNam University)
+    </a>
+</h2>
 
-Dự án xây dựng hệ thống quản lý thông minh cho cửa hàng thời trang trong bối cảnh chuyển đổi số, kết hợp:
+<h2 align="center">
+    ỨNG DỤNG CHUYỂN ĐỔI SỐ TRONG HỖ TRỢ CHẨN ĐOÁN SỨC KHỎE TÂM LÍ
+</h2>
 
-Website bán hàng thời trang (E-commerce) cho khách hàng. 
+<div align="center">
+    <p align="center">
+        <img alt="AIoTLab Logo" width="170" src="docs/aiotlab_logo.png" />
+        <img alt="DaiNam University Logo" width="200" src="docs/fitdnu_logo.png" />
+        <img alt="CNTT Logo" width="180" src="docs/dnu_logo.png" />
+    </p>
 
-E-commerce Website Project Scr…
+[![AIoTLab](https://img.shields.io/badge/AIoTLab-green?style=for-the-badge)](https://www.facebook.com/DNUAIoTLab)
+[![Faculty of Information Technology](https://img.shields.io/badge/Faculty%20of%20Information%20Technology-blue?style=for-the-badge)](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)
+[![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
+</div>
 
-Hệ thống quản lý nội bộ (Inventory/IMS) dùng cho nhân viên và quản trị. 
+# Hệ thống quản lý cửa hàng thời trang thông minh trong thời kỳ chuyển đổi số
 
-IMS-Project
+> Dự án chuyển đổi số cho cửa hàng thời trang, kết hợp website bán hàng (E-commerce) và hệ thống quản lý nội bộ (IMS – Inventory Management System) trên nền tảng .NET và SQL Server.
 
-Giải pháp cho phép cửa hàng thời trang:
+---
 
-Bán hàng đa kênh (online + offline).
+## 📌 Giới thiệu
 
-Quản lý sản phẩm, tồn kho, đơn hàng và khách hàng tập trung.
+Trong bối cảnh **chuyển đổi số**, cửa hàng thời trang không chỉ cần bán hàng trực tiếp tại cửa hàng mà còn phải:
 
-Ra quyết định dựa trên dữ liệu (data-driven).
+- Bán hàng đa kênh (online + offline)
+- Quản lý tồn kho, đơn hàng, khách hàng theo thời gian thực
+- Cá nhân hóa trải nghiệm mua sắm
+- Ra quyết định dựa trên dữ liệu
 
-2. Mục tiêu chuyển đổi số
+Dự án này xây dựng một **hệ thống quản lý thông minh** cho cửa hàng thời trang với các thành phần chính:
 
-Số hóa dữ liệu & quy trình
+- **CSDL E-commerce**: `E-commerce Website Project Script.sql`
+- **Website bán hàng (Client)**: `ClientSide-Kahreedo.pk.sln`
+- **Hệ thống quản lý kho (IMS)**: `IMS-Project.sln`
 
-Sản phẩm, khách hàng, đơn hàng, thanh toán, vận chuyển được lưu trữ tập trung trong CSDL Kahreedo. 
+---
 
-E-commerce Website Project Scr…
+## 🎯 Mục tiêu dự án
 
-Quản lý tập trung – theo thời gian thực
+- Số hóa toàn bộ dữ liệu: sản phẩm, khách hàng, đơn hàng, thanh toán, vận chuyển
+- Quản lý tập trung trong một hệ thống duy nhất
+- Hỗ trợ quản lý kho thông minh & đồng bộ với đơn hàng
+- Nâng cao trải nghiệm khách hàng (wishlist, sản phẩm xem gần đây, đánh giá,…)
+- Tạo nền tảng mở rộng cho các tính năng phân tích & AI sau này
 
-Tồn kho, doanh thu, lịch sử mua sắm cập nhật ngay khi có giao dịch.
+---
 
-Cá nhân hóa trải nghiệm khách hàng
+## 🧩 Các module chính
 
-Lưu wishlist, sản phẩm xem gần đây, đánh giá, phản hồi,… 
+### 1. Quản lý sản phẩm & danh mục
 
-E-commerce Website Project Scr…
+- Danh mục & tiểu danh mục (nam, nữ, trẻ em, phụ kiện, thể thao,…)
+- Thông tin sản phẩm:
+  - Tên, giá hiện tại, giá cũ
+  - Size, tồn kho
+  - Hình ảnh, mô tả ngắn/dài
+  - Gắn nhãn: `SALE`, `HOT`, `SOLD OUT`,...
 
-Tăng hiệu suất vận hành
+### 2. Quản lý khách hàng & hành vi
 
-Giảm thao tác thủ công, giảm sai sót, tối ưu nhân sự.
+- Hồ sơ khách hàng (thông tin cá nhân, liên hệ, địa chỉ)
+- Lịch sử mua hàng
+- Wishlist (danh sách yêu thích)
+- Recently viewed (sản phẩm đã xem)
+- Đánh giá & nhận xét sản phẩm
 
-Mở rộng linh hoạt
+### 3. Đơn hàng & thanh toán
 
-Có thể mở thêm chi nhánh, thêm dòng sản phẩm mà không thay đổi kiến trúc lõi.
+- Tạo đơn hàng, chi tiết đơn hàng
+- Tính tổng tiền, thuế, chiết khấu
+- Trạng thái đơn: tạo, đang xử lý, đã giao, đã hủy,…
+- Nhiều phương thức thanh toán (COD, thẻ, ví điện tử, v.v.)
+- Quản lý thông tin giao hàng
 
-3. Phạm vi hệ thống
+### 4. Quản lý kho (IMS)
 
-Hệ thống hướng tới một cửa hàng/thương hiệu thời trang với:
+- Theo dõi tồn kho theo từng sản phẩm
+- Nhập – xuất kho
+- Tự động trừ kho khi có đơn hàng
+- Hỗ trợ kiểm kê, cập nhật số lượng
 
-Nhóm khách hàng chính: Nam, nữ, trẻ em (bảng Categories, SubCategory). 
+### 5. Phân quyền & quản trị
 
-E-commerce Website Project Scr…
+- Tài khoản quản trị & nhân viên
+- Phân quyền theo vai trò: `Admin`, `Employee`, `User`
+- Giao diện quản trị để:
+  - Quản lý sản phẩm, đơn hàng, khách hàng
+  - Xem báo cáo cơ bản
 
-Kinh doanh nhiều nhóm mặt hàng: áo thun, polo, quần jean, giày, phụ kiện, v.v. (bảng Products). 
+### 6. Marketing & giao diện người dùng
 
-E-commerce Website Project Scr…
+- Slider/banner khuyến mãi trên trang chủ
+- Khu vực hiển thị:
+  - Hàng mới về
+  - Sản phẩm bán chạy
+  - Sản phẩm giảm giá
+- Hỗ trợ trải nghiệm mua sắm trực tuyến cho khách hàng cuối
 
-Có đội ngũ nhân viên, quản trị hệ thống (bảng admin_Employee, admin_Login, Roles). 
+---
 
-E-commerce Website Project Scr…
+## 🏗️ Kiến trúc tổng quan
 
-4. Kiến trúc tổng quan
-4.1. Tầng trình bày (Frontend)
+- **Frontend**:
+  - Website bán hàng cho khách hàng (ASP.NET Web)
+  - Giao diện quản trị cho Admin/nhân viên
 
-Website bán hàng cho khách (dự án Khareedo trong solution Visual Studio). 
+- **Backend**:
+  - Xử lý logic đơn hàng, thanh toán, cập nhật kho
+  - Áp dụng khuyến mãi, badge sản phẩm
+  - Phân quyền & xác thực người dùng
 
-ClientSide-Kahreedo.pk
+- **Database (SQL Server)**:
+  - Bảng sản phẩm, danh mục, nhà cung cấp
+  - Bảng khách hàng, đơn hàng, chi tiết đơn
+  - Bảng thanh toán, giao hàng
+  - Bảng wishlist, recently views, review
+  - Bảng tài khoản, nhân viên, roles
 
-Giao diện quản trị cho nhân viên/manager (quản lý sản phẩm, đơn, khách hàng, báo cáo).
+---
 
-4.2. Tầng nghiệp vụ (Backend)
+## 🛠️ Công nghệ sử dụng
 
-Xử lý logic đặt hàng, tính tổng tiền, chiết khấu, thuế (bảng Order, OrderDetails). 
+- **Ngôn ngữ**: C#
+- **Framework**: ASP.NET (Web Forms / MVC tùy cấu trúc solution)
+- **CSDL**: Microsoft SQL Server
+- **IDE**: Visual Studio 2013 trở lên
 
-E-commerce Website Project Scr…
+---
 
-Áp dụng khuyến mãi, badge (“SALE”, “HOT”, “SOLD OUT”). 
+## 🚀 Cài đặt & chạy dự án
 
-E-commerce Website Project Scr…
+### 1. Chuẩn bị môi trường
 
-Quản lý phân quyền theo vai trò (Admin, Employee, User) qua bảng Roles. 
+- Cài **SQL Server** / **SQL Server Express**
+- Cài **Visual Studio 2013+** (.NET, ASP.NET, C#, SQL Server tools)
 
-E-commerce Website Project Scr…
+### 2. Tạo cơ sở dữ liệu
 
-4.3. Tầng dữ liệu (Database)
+1. Mở file:
 
-CSDL SQL Server – Kahreedo chứa:
+   ```text
+   E-commerce Website Project Script.sql
+Thực thi script trong SQL Server Management Studio (SSMS):
 
-Sản phẩm, danh mục, nhà cung cấp.
+Tạo database (ví dụ: Kahreedo)
 
-Khách hàng, đơn hàng, thanh toán, vận chuyển.
+Tạo bảng, khóa ngoại
 
-Nội dung marketing (slider, banner).
+Insert dữ liệu mẫu (sản phẩm, khách, đơn hàng,…)
 
-Wishlist, Recently Viewed, Review của khách. 
+3. Chạy website bán hàng
 
-E-commerce Website Project Scr…
+Mở solution:
 
-5. Các phân hệ chức năng chính
-5.1. Quản lý sản phẩm & danh mục
+ClientSide-Kahreedo.pk.sln
 
-Quản lý danh mục (Categories) và tiểu danh mục (SubCategory) cho thời trang nam, nữ, trẻ em, thể thao, phụ kiện,…
 
-Quản lý sản phẩm (Products):
+Cập nhật chuỗi kết nối (connection string) trong file cấu hình (ví dụ: Web.config) trỏ tới database vừa tạo.
 
-Tên, giá hiện tại, giá cũ, size, tồn kho, hình ảnh, mô tả ngắn/dài.
+Build & Run trực tiếp từ Visual Studio (IIS Express).
 
-Gắn nhãn khuyến mãi: SALE, HOT, SOLD OUT, v.v. 
+4. Chạy hệ thống IMS (quản lý kho)
 
-E-commerce Website Project Scr…
+Mở solution:
 
-Quản lý nhà cung cấp (Suppliers).
+IMS-Project.sln
 
-5.2. Quản lý khách hàng & hành vi mua sắm
 
-Hồ sơ khách hàng (Customers):
+Cập nhật connection string (nếu cần) để trỏ về cùng database (hoặc DB kho riêng nếu bạn tách).
 
-Thông tin cá nhân, liên hệ, địa chỉ, lịch sử đăng nhập. 
+Build & Run từ Visual Studio.
 
-E-commerce Website Project Scr…
+## 🔮 Hướng phát triển trong tương lai
 
-Danh sách mong muốn (Wishlist).
+Dashboard BI (doanh thu, lợi nhuận, top sản phẩm, phân khúc khách hàng,…)
 
-Sản phẩm xem gần đây (RecentlyViews) – phục vụ cá nhân hóa & remarketing.
+Kết nối POS tại cửa hàng → mô hình omni-channel
 
-Đánh giá & nhận xét sản phẩm (Review).
+Tích hợp AI gợi ý sản phẩm dựa trên:
 
-5.3. Quản lý đơn hàng & thanh toán
+Lịch sử mua
 
-Đặt hàng & chi tiết đơn (Order, OrderDetails):
+Wishlist
 
-Tính tổng tiền, thuế, chiết khấu, trạng thái (đã hoàn tất, đã giao, đã huỷ, v.v.). 
+Sản phẩm đã xem
 
-E-commerce Website Project Scr…
+Nâng cấp responsive / PWA cho trải nghiệm mobile
 
-Quản lý thanh toán (Payment, PaymentType):
+Tăng cường bảo mật & logging
 
-Hỗ trợ nhiều hình thức: COD, Paypal, MasterCard, ví điện tử,… 
+📂 Cấu trúc repo (gợi ý)
+.
+├── README.md
+├── database/
+│   └── E-commerce Website Project Script.sql
+├── src/
+│   ├── ClientSide-Kahreedo.pk.sln
+│   └── IMS-Project.sln
+└── docs/
+    └── (tài liệu thêm nếu có)
 
-E-commerce Website Project Scr…
+## 👤 Tác giả / Thông tin
 
-Quản lý thông tin giao hàng (ShippingDetails):
+Mô tả: Đồ án/chuyên đề về chuyển đổi số cửa hàng thời trang với hệ thống quản lý thông minh.
 
-Tên người nhận, điện thoại, địa chỉ, tỉnh/thành, mã bưu chính.
-
-5.4. Quản lý kho & hệ thống nội bộ (IMS)
-
-Solution IMS-Project đóng vai trò hệ thống quản lý kho, hỗ trợ: 
-
-IMS-Project
-
-Theo dõi lượng tồn theo sản phẩm/chi nhánh.
-
-Kiểm kê, nhập – xuất kho.
-
-Kết nối với dữ liệu bán hàng để trừ kho tự động sau mỗi đơn.
-
-5.5. Marketing & trải nghiệm người dùng
-
-Slider chính (genMainSlider): cấu hình hình ảnh, tiêu đề, tag ưu đãi, nút “Shop Now” trên trang chủ. 
-
-E-commerce Website Project Scr…
-
-Banner khuyến mại theo danh mục (genPromoRight): ví dụ “Exclusive Item For Men”, “New Arrivals For Kids”,…
-
-Cung cấp các block hiển thị “Sản phẩm bán chạy”, “Giảm giá sốc”, “Hàng mới về” dựa trên dữ liệu đơn hàng & tồn kho.
-
-5.6. Phân quyền & bảo mật
-
-Quản lý nhân sự (admin_Employee) và tài khoản đăng nhập (admin_Login).
-
-Phân quyền theo Roles: Admin (toàn quyền), Employee (một phần chức năng), User (khách hàng). 
-
-E-commerce Website Project Scr…
-
-6. Công nghệ sử dụng
-
-Ngôn ngữ & framework:
-
-C# / ASP.NET (Web Forms hoặc MVC) – theo cấu trúc solution Visual Studio 2013. 
-
-ClientSide-Kahreedo.pk
-
-Cơ sở dữ liệu: Microsoft SQL Server, database Kahreedo. 
-
-E-commerce Website Project Scr…
-
-IDE: Visual Studio 2013 trở lên. 
-
-ClientSide-Kahreedo.pk
-
-7. Hướng dẫn cài đặt & chạy hệ thống
-
-Chuẩn bị môi trường
-
-Cài đặt SQL Server (hoặc SQL Server Express).
-
-Cài đặt Visual Studio 2013+.
-
-Khởi tạo CSDL
-
-Mở file script E-commerce Website Project Script.sql.
-
-Thực thi script trên SQL Server để:
-
-Tạo database Kahreedo.
-
-Tạo bảng, khoá ngoại, và insert dữ liệu mẫu (sản phẩm, khách hàng, đơn hàng, v.v.). 
-
-E-commerce Website Project Scr…
-
-Chạy web bán hàng
-
-Mở solution ClientSide-Kahreedo.pk.sln trong Visual Studio. 
-
-ClientSide-Kahreedo.pk
-
-Cấu hình chuỗi kết nối (connection string) trỏ tới database Kahreedo.
-
-Build & Run (Debug/Release).
-
-Chạy hệ thống IMS (quản lý kho)
-
-Mở solution IMS-Project.sln. 
-
-IMS-Project
-
-Cấu hình kết nối tới cùng CSDL (hoặc CSDL kho riêng nếu tách).
-
-Build & Run.
-
-8. Định hướng phát triển trong thời kỳ chuyển đổi số
-
-Tích hợp báo cáo BI (dashboard doanh thu, lợi nhuận, top sản phẩm, phân khúc khách hàng).
-
-Nâng cấp thành omni-channel: kết nối sàn TMĐT, mạng xã hội, POS tại cửa hàng.
-
-Tích hợp AI gợi ý sản phẩm dựa trên RecentlyViews, Wishlist, lịch sử đơn hàng.
-
-Tối ưu trải nghiệm mobile (Responsive / PWA).
-
-Chuẩn hóa quy trình bảo mật, log hoạt động người dùng, sao lưu CSDL định kỳ.
-
-9. Kết luận
-
-README này mô tả tổng quan hệ thống quản lý thông minh cho cửa hàng thời trang dựa trên:
-
-CSDL thương mại điện tử Kahreedo. 
-
-E-commerce Website Project Scr…
-
-Web client bán hàng (solution Khareedo). 
-
-ClientSide-Kahreedo.pk
-
-Hệ thống IMS quản lý kho nội bộ. 
-
-IMS-Project
-
-Bạn có thể dùng file này làm README.md cho đồ án hoặc repo GitHub về “Chuyển đổi số cửa hàng thời trang” và tùy chỉnh thêm cho sát với yêu cầu của giảng viên/doanh nghiệp.
+Người phát triển:Hoàng Thé Khải
