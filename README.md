@@ -5,7 +5,8 @@
 </h2>
 
 <h2 align="center">
-    HỆ THỐNG QUẢN LÝ CỬA HÀNG THỜI TRANG THÔNG MINH TRONG THỜI KỲ CHUYỂN ĐỔI SỐ
+HỆ THỐNG QUẢN LÝ CỬA HÀNG THỜI TRANG THÔNG MINH TRONG THỜI KỲ 
+    CHUYỂN ĐỔI SỐ
 </h2>
 
 <div align="center">
@@ -20,7 +21,6 @@
 [![DaiNam University](https://img.shields.io/badge/DaiNam%20University-orange?style=for-the-badge)](https://dainam.edu.vn)
 </div>
 
-# HỆ THỐNG QUẢN LÝ CỬA HÀNG THỜI TRANG THÔNG MINH TRONG THỜI KỲ CHUYỂN ĐỔI SỐ
 
 ## 🎯1. Giới thiệu
 
@@ -49,8 +49,8 @@ Dự án phù hợp cho:
 | | Bootstrap | Responsive Design |
 | | jQuery & AJAX | Xử lý sự kiện không tải lại trang |
 | | jQuery UI | Autocomplete cho ô tìm kiếm |
-| **AI / API** | **OpenRouter API** | Cổng kết nối AI (Free tier) |
-| | **LLaMA 3.1 Instruct** | Mô hình ngôn ngữ xử lý tư vấn |
+| **AI / API** | OpenRouter API | Cổng kết nối AI (Free tier) |
+| | LLaMA 3.1 Instruct | Mô hình ngôn ngữ xử lý tư vấn |
 
 ---
 
