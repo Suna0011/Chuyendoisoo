@@ -22,10 +22,6 @@
 
 # HỆ THỐNG QUẢN LÝ CỬA HÀNG THỜI TRANG THÔNG MINH TRONG THỜI KỲ CHUYỂN ĐỔI SỐ
 
-> Dự án chuyển đổi số cho cửa hàng thời trang, kết hợp website bán hàng (E-commerce) và hệ thống quản lý nội bộ (IMS – Inventory Management System) trên nền tảng .NET và SQL Server.
-
----
-
 ## 📌 Giới thiệu
 
 Trong bối cảnh **chuyển đổi số**, cửa hàng thời trang không chỉ cần bán hàng trực tiếp tại cửa hàng mà còn phải:
