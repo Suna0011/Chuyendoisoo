@@ -71,7 +71,7 @@ Giao diện Chatbot bong bóng ở góc phải, hỏi từng bước để lấy
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0fc5e2f6-fc50-4493-9a80-81cb96654c92" />
 
-### c. Trang Admin
+### d. Trang Admin
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9d02ea58-060c-4500-948b-23f2e13c6f55" />
 
