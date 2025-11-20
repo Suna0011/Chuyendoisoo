@@ -22,7 +22,7 @@
 
 # HỆ THỐNG QUẢN LÝ CỬA HÀNG THỜI TRANG THÔNG MINH TRONG THỜI KỲ CHUYỂN ĐỔI SỐ
 
-## 🎯1 Giới thiệu
+## 🎯1. Giới thiệu
 
 Dự án phù hợp cho:
 * Đồ án môn học / Bài tập lớn chuyên ngành CNTT.
@@ -38,7 +38,7 @@ Dự án phù hợp cho:
 
 ---
 
-## 🛠️2 Công nghệ sử dụng
+## 🛠️2. Công nghệ sử dụng
 
 | Lĩnh vực | Công nghệ | Chi tiết |
 | :--- | :--- | :--- |
@@ -54,7 +54,7 @@ Dự án phù hợp cho:
 
 ---
 
-## 📸3 Hình ảnh & Demo
+## 📸3. Hình ảnh & Demo
 
 
 ### a. Trang chủ & Sản phẩm
@@ -73,6 +73,7 @@ Giao diện Chatbot bong bóng ở góc phải, hỏi từng bước để lấy
 
 ### c. Trang Admin
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9d02ea58-060c-4500-948b-23f2e13c6f55" />
 
 ---
 
@@ -143,8 +144,9 @@ Giao diện Chatbot bong bóng ở góc phải, hỏi từng bước để lấy
 | **User**     | `admin`    |
 | **Password** | `admin123` |
 
+---
 
-## 📞5 Liên hệ
+## 📞5. Liên hệ
 Nếu bạn cần hỗ trợ cài đặt, tùy chỉnh giao diện hoặc nâng cấp tính năng AI, vui lòng liên hệ:
 
 - Tác giả: Nhóm 7 
